@@ -12,7 +12,7 @@ namespace Models {
 
         public function login($username, $password)
         {
-            return $this->connection->runQuery('select * from users where username = $1 and password = $2', [$username, $password])[0];
+            return $this->connection->runQuery('select * from users where username = $1 and password = md5($2)', [$username, $password])[0];
         }
 
         public function find($id)
