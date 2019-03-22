@@ -14,5 +14,3 @@ create table cars (
 insert into users(username, password)
 	values ('juanito', '123456'),
 		   ('juanita', '654321');
-
-UPDATE users SET password = md5('password');

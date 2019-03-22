@@ -29,3 +29,4 @@ require_once '../shared/db.php';
 </div>
 
 <?php require_once '../shared/footer.php' ?>
+<script type="text/javascript" src="/public/js/cars.js"></script>
